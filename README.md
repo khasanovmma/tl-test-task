@@ -32,10 +32,10 @@ pip install -r requirements.txt
 ```
 
 
-Copy env.example and paste in the root project directory and configure it
+Copy .env.local and paste in the root project directory and configure it
 
 ```
-.env.local
+.env
 ```
 
 .env configuration
