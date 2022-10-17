@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<div class="container py-5">
+    <p class="h3">Employee structure</p>
+    <span class="text-muted">Total number of employees: {{ employees_count }}</span>
+    <div class="mt-5">
+        {% include 'structure/components/_employee_list.html' %}
+    </div>
+    
+</div>
+{% include 'structure/components/_pagination.html' %}
+{% endblock content %}

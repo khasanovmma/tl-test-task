@@ -1,0 +1,7 @@
+Django==3.2.16
+pip-tools==6.8.0
+environs==9.4.0
+Faker==15.1.1
+django-autoslug==1.9.8
+django-mptt==0.13.4
+mysqlclient==2.1.0
