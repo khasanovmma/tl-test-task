@@ -18,7 +18,7 @@ def add_employees(number, self):
         elements=get_professions()
     )
 
-    for _ in range(number//2000):
+    for _ in range(number//100):
         fake = Faker()
         fake.add_provider(professions_provider)
         
@@ -29,7 +29,7 @@ def add_employees(number, self):
                 salary=5000,
             )
 
-        for _ in range(1999):
+        for _ in range(99):
             Employee.objects.create(
                 full_name=fake.name(),
                 position=fake.professions_provider(),

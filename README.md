@@ -23,14 +23,6 @@ source venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
-**or**
-
-```
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
 
 Copy .env.local and paste in the root project directory and configure it
 
@@ -45,15 +37,16 @@ SECRET_KEY=
 DEBUG=
 ALLOWED_HOSTS=
 NAME=
-USER=
-PASSWORD=
-HOST=
-PORT=
 ```
 
 ## Migrations
 ```
 python manage.py migrate
+```
+
+## Create Super User
+```
+python manage.py createsuperuser
 ```
 
 ## Loaddata
